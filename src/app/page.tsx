@@ -11,10 +11,32 @@ const musics = [{
 {
   numero:2, 
   artistName: 'Ariana Grande',
-  musicName: 'Sometimes Sometimes Sometimes Sometimes',
+  musicName: 'Sometimes',
   artistImage: 'style/assets/download (38).jpeg',
   userImage: 'style/assets/midjourney.jpeg'
-}]
+},
+{
+    numero:3, 
+    artistName: 'Bruno Mars',
+    musicName: 'Locked Out of Heaven',
+    artistImage: 'style/assets/download (39).jpeg',
+    userImage: 'style/assets/midjourney.jpeg'
+  },
+  {
+    numero:4, 
+    artistName: 'Tinashe',
+    musicName: 'Flame',
+    artistImage: 'style/assets/download (40).jpeg',
+    userImage: 'style/assets/midjourney.jpeg'
+  },
+  {
+    numero:5, 
+    artistName: 'Lady GaGa',
+    musicName: 'Lovegame',
+    artistImage: 'style/assets/Mm yea.jpeg',
+    userImage: 'style/assets/midjourney.jpeg'
+  }  
+]
 
 export default function Home() {
   return (
@@ -56,67 +78,6 @@ export default function Home() {
               userImage={music.userImage}
               key={music.numero}/>
             ))}
-
-            <div className="playlist-item">
-                <div className="moldura-numero">
-                     3
-                </div>
-                <div className="playlist-musica">
-                    <p className="titulo-musica">Bruno Mars</p>
-                    <hr/>
-                    <p className="titulo-musica">Locked Out of...</p>
-                </div>
-
-                    <div className="container-imagem">
-                        <div className="moldura">
-                             <img src="style/assets/download (39).jpeg" alt="imagem do usuario" className="imagem-moldura"/>
-                        </div>
-                         <div className="moldura">
-                            <img src="style/assets/midjourney.jpeg" alt="imagem do usuario" className="imagem-moldura"/>
-                        </div>
-                    </div>
-                
-            </div>
-            <div className="playlist-item">
-                <div className="moldura-numero">
-                     4
-                </div>
-                <div className="playlist-musica">
-                    <p className="titulo-musica">Tinashe</p>
-                    <hr/>
-                    <p className="titulo-musica">Flame</p>
-                </div>
-
-                    <div className="container-imagem">
-                        <div className="moldura">
-                             <img src="style/assets/download (40).jpeg" alt="imagem do usuario" className="imagem-moldura"/>
-                        </div>
-                         <div className="moldura">
-                            <img src="style/assets/midjourney.jpeg" alt="imagem do usuario" className="imagem-moldura"/>
-                        </div>
-                    </div>
-                
-            </div>
-            <div className="playlist-item">
-                <div className="moldura-numero">
-                     5
-                </div>
-                <div className="playlist-musica">
-                    <p className="titulo-musica">Lady GaGa</p>
-                    <hr/>
-                    <p className="titulo-musica">Lovegame</p>
-                </div>
-
-                    <div className="container-imagem">
-                        <div className="moldura">
-                             <img src="style/assets/Mm yea.jpeg" alt="imagem do usuario" className="imagem-moldura"/>
-                        </div>
-                         <div className="moldura">
-                            <img src="style/assets/midjourney.jpeg" alt="imagem do usuario" className="imagem-moldura"/>
-                        </div>
-                    </div>
-                
-            </div>
             
         </section>
     </main>
