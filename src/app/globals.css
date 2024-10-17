@@ -14,14 +14,196 @@
   }
 }
 
-body {
+/*body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-}
+}*/
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  width: 24.375rem;
+  height: 5.9375rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: baseline;
+  padding: 0.25rem;
+}
+
+.moldura {
+  width: 3.625rem;
+  height: 3.625rem;
+  flex-shrink: 0;
+  border-radius: 3.625rem;
+  border: 1px solid #CD02F6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden; /* Garante que a imagem não ultrapasse a moldura */
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-moldura {
+  width: 100%;     
+  height: 100%;    
+  object-fit: cover; /* Ajusta a imagem para cobrir a área da moldura sem distorcer */
+  border-radius: 50%; 
+}
+
+.playlist {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 24.375rem;
+  height: 7.0625rem;
+  flex-shrink: 0;
+  border-radius: 2.5rem;
+  border: 1px solid #1E1E1E;
+  background: #401F48;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.moldura-numero{
+  width: 3.625rem;
+  height: 3.625rem;
+  flex-shrink: 0;
+  border-radius: 3.625rem;
+  border: 1px solid #CD02F6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden; /* Garante que a imagem não ultrapasse a moldura */
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: white;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.25rem;
+}
+
+.playlist-tema{
+  width: 15.6875rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  border: 2px solid #000;
+  background: #399D07;
+  text-align: center;
+  justify-content: center;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playlist-subtitulo{
+  font-size: 0.75rem;
+}
+
+hr{
+  border: none;                
+  border-top: 2px solid black;
+  width: 100%; 
+  margin: 4px;
+}
+
+.botao-menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  background: #000;
+  box-shadow: 0px 7px 7px 0px rgba(205, 2, 246, 0.50);
+  color: #CD02F6;
+  font-family: "Zen Dots";
+  font-size: 0.575rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.botao-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 1.5rem;
+}
+
+.botao-sugerir {
+  width: 9.6875rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  background: #000;
+  box-shadow: 0px 7px 7px 0px rgba(205, 2, 246, 0.50);
+  color: #CD02F6;
+  font-family: "Zen Dots";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.playlist-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 24.375rem;
+  height: 7.0625rem;
+  flex-shrink: 0;
+  border-radius: 2.5rem;
+  border: 1px solid #1E1E1E;
+  background: #401F48;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.playlist-musica {
+  width: 11.6875rem;
+  /* height: 3rem; */
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  border: 2px solid #000;
+  background: #399D07;
+}
+
+
+.container-imagem {
+  display: flex;
+  position: relative;
+}
+
+.titulo-musica {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  color: #0F0E0E;
+  text-align: center;
+
 }
