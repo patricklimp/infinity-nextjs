@@ -1,6 +1,7 @@
 import Photos from "@/components/photos";
 import PlaylistMusic from "@/components/playlistmusic";
 import Order from "@/components/order";
+
 interface PlaylistItemProps {
     numero: number;
     artistName: string;
