@@ -66,9 +66,9 @@ export default function Home() {
 
         </div>
 
-        <div style={{ color: "white" }}>
+        <div>
           {searchText.length > 0 && listMusic.map(music => (
-            <div className=" cursor-pointer" onClick={() => chooseMusic(music)}>
+            <div className="musicList" onClick={() => chooseMusic(music)}>
               {music.musicName} / {music.artistName}
             </div>
           ))}

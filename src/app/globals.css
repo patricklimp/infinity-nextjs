@@ -207,3 +207,22 @@ hr{
   text-align: center;
 
 }
+
+.musicList {
+  color: black;
+  padding: 0.5rem;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: #399D07;
+  border: 0.025rem solid #0F0E0E;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 24.375rem;
+}
+
+.musicList:hover {
+  color: white;
+  background: #401F48;
+}
