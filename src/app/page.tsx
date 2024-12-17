@@ -3,6 +3,7 @@ import PlaylistItem from "@/components/playlistItem";
 import { musics, spotifyMusics } from "@/data/mockdata";
 import { searchMusic } from "@/lib/repository/musicrepository";
 import { addMusic, fetchPlaylist } from "@/lib/repository/playlistrepository";
+import { useSession } from "next-auth/react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -13,6 +14,7 @@ export default function Home() {
   const [searchText, setSearchText] = useState('')
   const [listMusic, setListMusic] = useState(spotifyMusics)
   const [playlist, setPlaylist] = useState<Playlist|undefined>(undefined)
+  const session = useSession()
 
   useEffect(()=>{
     fetchPlaylist().then((playlist)=>{setPlaylist(playlist)})
@@ -39,7 +41,7 @@ export default function Home() {
       <header>
         <button className="botao-menu">Menu</button>
         <div className="moldura">
-          <img src="style/assets/midjourney.jpeg" alt="imagem do usuario" className="imagem-moldura" />
+          <img src={session.data?.user.image ?? ''} alt="imagem do usuario" className="imagem-moldura" />
         </div>
       </header>
 
