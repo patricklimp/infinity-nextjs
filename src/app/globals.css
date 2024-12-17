@@ -230,6 +230,7 @@ hr{
 
 .login{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ffffff;
@@ -239,9 +240,22 @@ hr{
 
 .login-spotify {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  align-content: space-between;
   color: #ffffff;
   padding: 0.75rem;
   background-color: green;
+  height: 50px;
+  border-radius: 2rem;
+  font-size: 15px;
+  width: 15rem;
+  font-family: "Zen Dots";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.image-logo {
+  height: 100%;
 }
