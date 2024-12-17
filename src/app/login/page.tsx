@@ -1,5 +1,5 @@
 "use client"
-import { signIn } from "next-auth/react"
+import { signIn, signOut } from "next-auth/react"
 
 export default function login(){
     return (
@@ -8,6 +8,7 @@ export default function login(){
                 <img className="image-logo" src="style/assets/spotify.png" alt="Logo do Spotify" />
                 <button onClick={() =>{signIn('spotify')}}>Conecte-se com spotify</button>
             </div>
+            <button onClick={()=>{signOut()}}>Logout</button>
         </section>
     )
 }
